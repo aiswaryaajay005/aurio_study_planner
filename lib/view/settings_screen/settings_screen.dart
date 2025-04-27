@@ -2,6 +2,7 @@ import 'package:aurio/global_constants/color/color_constants.dart';
 import 'package:aurio/view/contact_support_screen/contact_support_screen.dart';
 import 'package:aurio/view/manage_subject_screen/manage_subject_screen.dart';
 import 'package:aurio/view/privacy_policy_screen/privacy_policy_screen.dart';
+import 'package:aurio/view/submit_feedback_screen/submit_feedback_screen.dart';
 import 'package:aurio/view/terms_screen/terms_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -54,6 +55,16 @@ class SettingsScreen extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => ContactSupportScreen()),
+              );
+            },
+            trailing: const Icon(Icons.arrow_forward_ios),
+          ),
+          ListTile(
+            title: const Text("Send Feedback"),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SubmitFeedbackScreen()),
               );
             },
             trailing: const Icon(Icons.arrow_forward_ios),
