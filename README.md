@@ -1,16 +1,9 @@
-# aurio
+AURIO STUDY PLANNER
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Aurio Study Planner is a smart Flutter-based application designed to help students plan their studies efficiently with the help of AI. The user side of the app focuses on providing students with a complete experience for scheduling, tracking, and improving their daily study habits. Users can sign up, log in, and set up their profiles by adding subjects, choosing difficulty levels, and setting the number of study hours per day.
+Once the profile is set up, the app automatically generates a personalized study plan. Students can view their daily tasks, start study sessions with timers, and track their weekly progress using graphs and analytics. The app also encourages consistency by introducing a streak system where users can maintain daily study habits. Rewards such as coins and diamonds are awarded for completing tasks and maintaining streaks. Special options like "Streak Freeze" allow users to save their streaks even if they miss a day.
+Students can add upcoming exams inside the app using the "Add Exam" feature, which helps in adjusting study plans automatically based on exam dates. Important exam reminders are shown under the "Exams Ahead" section.
+Aurio also provides a feedback system where users can report bugs, give suggestions, or provide general feedback directly from the app. Submitted feedback is viewed by the admin separately.
+In addition to basic study planning, users can manage their subjects, synchronize their calendar with Google Calendar, and view advanced analytics on how much time they have studied each day. There is a fully functional settings section where users can update app preferences, switch between Light Mode and Dark Mode, view the privacy policy, terms of service, and contact the support team.
+The app uses Provider for state management, Supabase for backend services (authentication, database, storage), and FL Chart to display graphs. It follows a clean MVC folder structure to separate models, views, and controllers properly.
+The user experience is clean, simple, and motivational, with elements of gamification like daily rewards, streak tracking, and achievements planned for future improvements.

@@ -1,4 +1,5 @@
 import 'package:aurio/global_constants/color/color_constants.dart';
+import 'package:aurio/view/add_exam_screen/add_exam_screen.dart';
 import 'package:flutter/material.dart';
 
 class ExamsAheadScreen extends StatelessWidget {
@@ -29,6 +30,17 @@ class ExamsAheadScreen extends StatelessWidget {
             ElevatedButton(
               onPressed: () => Navigator.pop(context),
               child: const Text("Start Extra Prep"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const AddExamScreen(),
+                  ),
+                );
+              },
+              child: const Text("Add New Exam"),
             ),
           ],
         ),
