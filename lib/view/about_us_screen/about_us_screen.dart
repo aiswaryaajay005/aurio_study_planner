@@ -8,7 +8,10 @@ class AboutUsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorConstants.backgroundColor,
-      appBar: AppBar(title: const Text("About Aurio")),
+      appBar: AppBar(
+        title: const Text("About Aurio"),
+        backgroundColor: ColorConstants.appBarColor,
+      ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Column(
@@ -32,17 +35,17 @@ class AboutUsScreen extends StatelessWidget {
             const SizedBox(height: 10),
             Text(
               "Version 1.0.0",
-              style: TextStyle(color: ColorConstants.TextColor),
+              style: TextStyle(color: ColorConstants.textColor),
             ),
             const SizedBox(height: 30),
             Text(
               "Aurio is a smart AI-powered study planning app designed to help students organize their tasks, manage their exams, and stay motivated with rewards and streaks. Plan smarter, study lighter!",
               textAlign: TextAlign.center,
-              style: TextStyle(color: ColorConstants.TextColor, fontSize: 16),
+              style: TextStyle(color: ColorConstants.textColor, fontSize: 16),
             ),
             const SizedBox(height: 30),
             Text(
-              "Developed with ❤️ by the Aurio Team.",
+              "Developed with love by the Aurio Team.",
               textAlign: TextAlign.center,
               style: TextStyle(color: ColorConstants.accentColor),
             ),

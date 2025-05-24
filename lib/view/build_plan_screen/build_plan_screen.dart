@@ -43,7 +43,7 @@ class _BuildPlanScreenState extends State<BuildPlanScreen> {
               Text(
                 "Analyzing subjects...\nGenerating your personalized study plan.",
                 textAlign: TextAlign.center,
-                style: TextStyle(color: ColorConstants.TextColor, fontSize: 16),
+                style: TextStyle(color: ColorConstants.textColor, fontSize: 16),
               ),
               const SizedBox(height: 40),
               const CircularProgressIndicator(),

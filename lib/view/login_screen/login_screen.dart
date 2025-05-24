@@ -62,7 +62,7 @@ class _LoginScreenState extends State<LoginScreen> {
               },
               child: Text(
                 'Don\'t have an account? Sign Up',
-                style: TextStyle(color: ColorConstants.TextColor, fontSize: 14),
+                style: TextStyle(color: ColorConstants.textColor, fontSize: 14),
               ),
             ),
           ],

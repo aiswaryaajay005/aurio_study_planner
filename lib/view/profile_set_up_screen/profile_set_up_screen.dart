@@ -153,10 +153,10 @@ class _ProfileSetUpScreenState extends State<ProfileSetUpScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("0h", style: TextStyle(color: ColorConstants.TextColor)),
+                  Text("0h", style: TextStyle(color: ColorConstants.textColor)),
                   Text(
                     "12h",
-                    style: TextStyle(color: ColorConstants.TextColor),
+                    style: TextStyle(color: ColorConstants.textColor),
                   ),
                 ],
               ),

@@ -26,7 +26,7 @@ class DailySummaryScreen extends StatelessWidget {
             Text(
               "Great job! You finished $tasksDone tasks.\nTotal study time: $hours hrs",
               textAlign: TextAlign.center,
-              style: TextStyle(color: ColorConstants.TextColor, fontSize: 18),
+              style: TextStyle(color: ColorConstants.textColor, fontSize: 18),
             ),
             const SizedBox(height: 30),
             ElevatedButton(

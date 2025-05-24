@@ -14,8 +14,13 @@ class SettingsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorConstants.backgroundColor,
+
       appBar: AppBar(
-        title: const Text("Settings"),
+        backgroundColor: ColorConstants.primaryColor,
+        title: Text(
+          "Settings",
+          style: TextStyle(color: ColorConstants.textColor),
+        ),
         actions: [
           IconButton(
             onPressed: () {
@@ -28,10 +33,21 @@ class SettingsScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(20),
         children: [
-          const CircleAvatar(radius: 40, backgroundColor: Colors.white),
+          CircleAvatar(radius: 40, backgroundColor: ColorConstants.accentColor),
+          const SizedBox(height: 20),
           ListTile(
-            leading: const Icon(Icons.person_outline),
-            title: const Text("My Profile"),
+            tileColor: ColorConstants.primaryColor,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(15),
+            ),
+            leading: Icon(
+              Icons.person_outline,
+              color: ColorConstants.textColor,
+            ),
+            title: Text(
+              "My Profile",
+              style: TextStyle(color: ColorConstants.accentColor),
+            ),
             onTap: () {
               Navigator.push(
                 context,
@@ -42,7 +58,14 @@ class SettingsScreen extends StatelessWidget {
 
           const SizedBox(height: 20),
           ListTile(
-            title: const Text("Manage Subjects"),
+            tileColor: ColorConstants.primaryColor,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(15),
+            ),
+            title: Text(
+              "Manage Subjects",
+              style: TextStyle(color: ColorConstants.accentColor),
+            ),
             onTap: () {
               Navigator.push(
                 context,
@@ -51,8 +74,16 @@ class SettingsScreen extends StatelessWidget {
             },
             trailing: const Icon(Icons.arrow_forward_ios),
           ),
+          const SizedBox(height: 20),
           ListTile(
-            title: const Text("Privacy Policy"),
+            tileColor: ColorConstants.primaryColor,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(15),
+            ),
+            title: Text(
+              "Privacy Policy",
+              style: TextStyle(color: ColorConstants.accentColor),
+            ),
             onTap: () {
               Navigator.push(
                 context,
@@ -61,8 +92,16 @@ class SettingsScreen extends StatelessWidget {
             },
             trailing: const Icon(Icons.arrow_forward_ios),
           ),
+          const SizedBox(height: 20),
           ListTile(
-            title: const Text("Terms and Conditions"),
+            tileColor: ColorConstants.primaryColor,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(15),
+            ),
+            title: Text(
+              "Terms and Conditions",
+              style: TextStyle(color: ColorConstants.accentColor),
+            ),
             onTap: () {
               Navigator.push(
                 context,
@@ -71,8 +110,16 @@ class SettingsScreen extends StatelessWidget {
             },
             trailing: const Icon(Icons.arrow_forward_ios),
           ),
+          const SizedBox(height: 20),
           ListTile(
-            title: const Text("Contact Support"),
+            tileColor: ColorConstants.primaryColor,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(15),
+            ),
+            title: Text(
+              "Contact Support",
+              style: TextStyle(color: ColorConstants.accentColor),
+            ),
             onTap: () {
               Navigator.push(
                 context,
@@ -81,8 +128,16 @@ class SettingsScreen extends StatelessWidget {
             },
             trailing: const Icon(Icons.arrow_forward_ios),
           ),
+          const SizedBox(height: 20),
           ListTile(
-            title: const Text("Send Feedback"),
+            tileColor: ColorConstants.primaryColor,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(15),
+            ),
+            title: Text(
+              "Send Feedback",
+              style: TextStyle(color: ColorConstants.accentColor),
+            ),
             onTap: () {
               Navigator.push(
                 context,
@@ -91,6 +146,7 @@ class SettingsScreen extends StatelessWidget {
             },
             trailing: const Icon(Icons.arrow_forward_ios),
           ),
+          const SizedBox(height: 20),
         ],
       ),
     );

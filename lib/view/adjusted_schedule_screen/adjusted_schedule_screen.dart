@@ -23,7 +23,7 @@ class AdjustedScheduleScreen extends StatelessWidget {
               (c) => ListTile(
                 title: Text(
                   c,
-                  style: TextStyle(color: ColorConstants.TextColor),
+                  style: TextStyle(color: ColorConstants.textColor),
                 ),
               ),
             ),

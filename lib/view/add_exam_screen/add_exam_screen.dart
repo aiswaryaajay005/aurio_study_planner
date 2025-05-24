@@ -47,7 +47,7 @@ class _AddExamScreenState extends State<AddExamScreen> {
                 selectedDate != null
                     ? "Selected Date: ${selectedDate!.toLocal().toString().split(' ')[0]}"
                     : "Choose Exam Date",
-                style: TextStyle(color: ColorConstants.TextColor),
+                style: TextStyle(color: ColorConstants.textColor),
               ),
               trailing: Icon(
                 Icons.calendar_today,

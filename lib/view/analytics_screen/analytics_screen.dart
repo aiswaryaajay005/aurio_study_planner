@@ -11,14 +11,20 @@ class AnalyticsScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: ColorConstants.backgroundColor,
-      appBar: AppBar(title: const Text("Analytics")),
+      appBar: AppBar(
+        backgroundColor: ColorConstants.appBarColor,
+        title: Text(
+          "Analytics",
+          style: TextStyle(color: ColorConstants.textColor),
+        ),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Column(
           children: [
             Text(
               "📊 Study Hours This Week",
-              style: TextStyle(fontSize: 18, color: ColorConstants.TextColor),
+              style: TextStyle(fontSize: 18, color: ColorConstants.textColor),
             ),
             const SizedBox(height: 30),
             Expanded(
@@ -42,7 +48,7 @@ class AnalyticsScreen extends StatelessWidget {
                           ];
                           return Text(
                             days[value.toInt()],
-                            style: TextStyle(color: ColorConstants.TextColor),
+                            style: TextStyle(color: ColorConstants.textColor),
                           );
                         },
                         reservedSize: 28,

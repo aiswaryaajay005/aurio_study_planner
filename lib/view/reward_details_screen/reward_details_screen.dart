@@ -14,7 +14,13 @@ class RewardDetailsScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: ColorConstants.backgroundColor,
-      appBar: AppBar(title: const Text("My Rewards")),
+      appBar: AppBar(
+        backgroundColor: ColorConstants.appBarColor,
+        title: Text(
+          "My Rewards",
+          style: TextStyle(color: ColorConstants.textColor),
+        ),
+      ),
       body: ListView.builder(
         padding: const EdgeInsets.all(20),
         itemCount: rewards.length,
@@ -26,7 +32,7 @@ class RewardDetailsScreen extends StatelessWidget {
               leading: const Icon(Icons.stars, color: Colors.amber),
               title: Text(
                 reward['reward']!,
-                style: TextStyle(color: ColorConstants.TextColor),
+                style: TextStyle(color: ColorConstants.textColor),
               ),
               subtitle: Text(
                 reward['date']!,

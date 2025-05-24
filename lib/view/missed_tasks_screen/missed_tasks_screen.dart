@@ -26,7 +26,7 @@ class MissedTasksScreen extends StatelessWidget {
                       child: ListTile(
                         title: Text(
                           "${task['subject']}: ${task['task']}",
-                          style: TextStyle(color: ColorConstants.TextColor),
+                          style: TextStyle(color: ColorConstants.textColor),
                         ),
                         trailing: ElevatedButton(
                           onPressed: () {

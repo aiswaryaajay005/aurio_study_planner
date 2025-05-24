@@ -17,7 +17,7 @@ class RescheduleScreen extends StatelessWidget {
           children: [
             Text(
               "New time for: $task",
-              style: TextStyle(color: ColorConstants.TextColor),
+              style: TextStyle(color: ColorConstants.textColor),
             ),
             const SizedBox(height: 20),
             TextFormField(

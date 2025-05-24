@@ -77,7 +77,7 @@ class HomeScreen extends StatelessWidget {
                     Text(
                       "$streakDays-day streak!",
                       style: TextStyle(
-                        color: ColorConstants.TextColor,
+                        color: ColorConstants.textColor,
                         fontSize: 18,
                       ),
                     ),
@@ -110,7 +110,7 @@ class HomeScreen extends StatelessWidget {
                   title: Text(
                     "$todayTasks Tasks for Today",
                     style: TextStyle(
-                      color: ColorConstants.TextColor,
+                      color: ColorConstants.textColor,
                       fontSize: 18,
                     ),
                   ),
@@ -142,7 +142,7 @@ class HomeScreen extends StatelessWidget {
                   title: Text(
                     "Next Exam in $daysUntilExam Days",
                     style: TextStyle(
-                      color: ColorConstants.TextColor,
+                      color: ColorConstants.textColor,
                       fontSize: 18,
                     ),
                   ),
@@ -166,7 +166,7 @@ class HomeScreen extends StatelessWidget {
               // Quick Access Buttons
               Text(
                 "Quick Access",
-                style: TextStyle(color: ColorConstants.TextColor, fontSize: 20),
+                style: TextStyle(color: ColorConstants.textColor, fontSize: 20),
               ),
               const SizedBox(height: 10),
               Row(
@@ -238,7 +238,7 @@ class HomeScreen extends StatelessWidget {
         const SizedBox(height: 6),
         Text(
           title,
-          style: TextStyle(color: ColorConstants.TextColor, fontSize: 14),
+          style: TextStyle(color: ColorConstants.textColor, fontSize: 14),
         ),
       ],
     );

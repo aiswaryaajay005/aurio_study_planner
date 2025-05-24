@@ -15,8 +15,11 @@ class NextSessionScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: ColorConstants.backgroundColor,
       appBar: AppBar(
-        backgroundColor: ColorConstants.backgroundColor,
-        title: const Text("Next Session"),
+        backgroundColor: ColorConstants.appBarColor,
+        title: Text(
+          "Next Session",
+          style: TextStyle(color: ColorConstants.textColor),
+        ),
       ),
       body: Center(
         child: Column(
@@ -28,7 +31,7 @@ class NextSessionScreen extends StatelessWidget {
               "$subject\n$timeRange",
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: ColorConstants.TextColor,
+                color: ColorConstants.textColor,
                 fontSize: 20,
                 fontWeight: FontWeight.w500,
               ),
@@ -51,7 +54,10 @@ class NextSessionScreen extends StatelessWidget {
                 );
               },
               icon: const Icon(Icons.play_arrow),
-              label: const Text("Start Now"),
+              label: Text(
+                "Start Now",
+                style: TextStyle(color: ColorConstants.textColor),
+              ),
             ),
           ],
         ),

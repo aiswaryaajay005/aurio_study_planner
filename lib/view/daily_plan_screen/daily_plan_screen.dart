@@ -18,8 +18,11 @@ class DailyPlanScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: ColorConstants.backgroundColor,
       appBar: AppBar(
-        backgroundColor: ColorConstants.backgroundColor,
-        title: const Text("Today's Plan"),
+        backgroundColor: ColorConstants.appBarColor,
+        title: Text(
+          "Today's Plan",
+          style: TextStyle(color: ColorConstants.textColor),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -36,7 +39,7 @@ class DailyPlanScreen extends StatelessWidget {
                     title: Text(
                       "${task['subject']}: ${task['task']}",
                       style: TextStyle(
-                        color: ColorConstants.TextColor,
+                        color: ColorConstants.textColor,
                         decoration:
                             task['done'] ? TextDecoration.lineThrough : null,
                       ),
@@ -47,13 +50,14 @@ class DailyPlanScreen extends StatelessWidget {
                           : Icons.radio_button_unchecked,
                       color:
                           task['done']
-                              ? Colors.green
+                              ? Colors.indigo
                               : ColorConstants.accentColor,
                     ),
                   ),
                 );
               },
             ),
+            SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -63,7 +67,17 @@ class DailyPlanScreen extends StatelessWidget {
                   ),
                 );
               },
-              child: Text("Start"),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: ColorConstants.primaryColor,
+                padding: const EdgeInsets.symmetric(
+                  vertical: 15,
+                  horizontal: 30,
+                ),
+              ),
+              child: Text(
+                "Start",
+                style: TextStyle(color: ColorConstants.textColor),
+              ),
             ),
           ],
         ),

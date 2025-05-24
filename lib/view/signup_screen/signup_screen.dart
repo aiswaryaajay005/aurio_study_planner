@@ -110,7 +110,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   child: Text(
                     'Already have an account? Log in',
                     style: TextStyle(
-                      color: ColorConstants.TextColor,
+                      color: ColorConstants.textColor,
                       fontSize: 14,
                     ),
                   ),

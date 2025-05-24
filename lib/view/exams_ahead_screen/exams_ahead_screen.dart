@@ -11,7 +11,13 @@ class ExamsAheadScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: ColorConstants.backgroundColor,
-      appBar: AppBar(title: const Text("Exams Coming Up")),
+      appBar: AppBar(
+        title: Text(
+          "Exams Coming Up",
+          style: TextStyle(color: ColorConstants.textColor),
+        ),
+        backgroundColor: ColorConstants.appBarColor,
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -24,12 +30,18 @@ class ExamsAheadScreen extends StatelessWidget {
             const SizedBox(height: 20),
             Text(
               "${exam['subject']} exam in ${exam['daysLeft']} days!",
-              style: TextStyle(color: ColorConstants.TextColor, fontSize: 18),
+              style: TextStyle(color: ColorConstants.textColor, fontSize: 18),
             ),
             const SizedBox(height: 30),
             ElevatedButton(
               onPressed: () => Navigator.pop(context),
-              child: const Text("Start Extra Prep"),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: ColorConstants.primaryColor,
+              ),
+              child: Text(
+                "Start Extra Prep",
+                style: TextStyle(color: ColorConstants.textColor),
+              ),
             ),
             ElevatedButton(
               onPressed: () {
@@ -40,7 +52,13 @@ class ExamsAheadScreen extends StatelessWidget {
                   ),
                 );
               },
-              child: const Text("Add New Exam"),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: ColorConstants.primaryColor,
+              ),
+              child: Text(
+                "Add New Exam",
+                style: TextStyle(color: ColorConstants.textColor),
+              ),
             ),
           ],
         ),

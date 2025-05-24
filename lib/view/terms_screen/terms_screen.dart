@@ -13,7 +13,7 @@ class TermsScreen extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Text(
           "By using this app, you agree to study hard, stay consistent, and treat yourself with kindness. The app is designed for educational purposes only and does not replace professional academic counseling.",
-          style: TextStyle(color: ColorConstants.TextColor),
+          style: TextStyle(color: ColorConstants.textColor),
         ),
       ),
     );

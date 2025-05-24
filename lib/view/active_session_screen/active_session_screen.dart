@@ -78,7 +78,7 @@ class _ActiveSessionScreenState extends State<ActiveSessionScreen> {
           children: [
             Text(
               "Math",
-              style: TextStyle(fontSize: 22, color: ColorConstants.TextColor),
+              style: TextStyle(fontSize: 22, color: ColorConstants.textColor),
             ),
             const SizedBox(height: 20),
             Text(

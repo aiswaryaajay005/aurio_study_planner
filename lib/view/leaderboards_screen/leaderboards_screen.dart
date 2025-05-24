@@ -8,22 +8,31 @@ class LeaderboardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final users = [
       {"name": "You", "progress": "100%"},
-      {"name": "Alice", "progress": "88%"},
-      {"name": "John", "progress": "79%"},
+      {"name": "Niya", "progress": "88%"},
+      {"name": "Miya", "progress": "79%"},
     ];
 
     return Scaffold(
       backgroundColor: ColorConstants.backgroundColor,
-      appBar: AppBar(title: const Text("Leaderboard")),
+      appBar: AppBar(
+        backgroundColor: ColorConstants.appBarColor,
+        title: Text(
+          "Leaderboard",
+          style: TextStyle(color: ColorConstants.textColor),
+        ),
+      ),
       body: ListView.builder(
         itemCount: users.length,
         itemBuilder: (context, index) {
           final user = users[index];
           return ListTile(
-            leading: CircleAvatar(child: Text("${index + 1}")),
+            leading: CircleAvatar(
+              child: Text("${index + 1}"),
+              backgroundColor: ColorConstants.accentColor,
+            ),
             title: Text(
               user['name']!,
-              style: TextStyle(color: ColorConstants.TextColor),
+              style: TextStyle(color: ColorConstants.textColor),
             ),
             trailing: Text(
               user['progress']!,

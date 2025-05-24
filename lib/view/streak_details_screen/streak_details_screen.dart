@@ -12,7 +12,10 @@ class StreakDetailsScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: ColorConstants.backgroundColor,
-      appBar: AppBar(title: const Text("My Streak")),
+      appBar: AppBar(
+        title: const Text("My Streak"),
+        backgroundColor: ColorConstants.appBarColor,
+      ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Column(
@@ -24,19 +27,19 @@ class StreakDetailsScreen extends StatelessWidget {
             const SizedBox(height: 30),
             Text(
               "❄️ Freezes Used: $totalFreezesUsed",
-              style: TextStyle(fontSize: 18, color: ColorConstants.TextColor),
+              style: TextStyle(fontSize: 18, color: ColorConstants.textColor),
             ),
             const SizedBox(height: 20),
             Text(
               "Freeze Dates:",
-              style: TextStyle(fontSize: 16, color: ColorConstants.TextColor),
+              style: TextStyle(fontSize: 16, color: ColorConstants.textColor),
             ),
             ...freezeDates.map(
               (date) => ListTile(
                 leading: const Icon(Icons.calendar_today),
                 title: Text(
                   date,
-                  style: TextStyle(color: ColorConstants.TextColor),
+                  style: TextStyle(color: ColorConstants.textColor),
                 ),
               ),
             ),

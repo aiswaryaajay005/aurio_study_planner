@@ -16,7 +16,14 @@ class ProfileScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: ColorConstants.backgroundColor,
-      appBar: AppBar(title: const Text("My Profile")),
+      appBar: AppBar(
+        backgroundColor: ColorConstants.appBarColor,
+
+        title: Text(
+          "My Profile",
+          style: TextStyle(color: ColorConstants.textColor),
+        ),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Column(
@@ -39,20 +46,29 @@ class ProfileScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 5),
-            Text(email, style: TextStyle(color: ColorConstants.TextColor)),
+            Text(email, style: TextStyle(color: ColorConstants.textColor)),
             const SizedBox(height: 20),
 
             ListTile(
               leading: const Icon(Icons.school_outlined),
-              title: Text(grade),
+              title: Text(
+                grade,
+                style: TextStyle(color: ColorConstants.textColor),
+              ),
             ),
             ListTile(
               leading: const Icon(Icons.local_fire_department_outlined),
-              title: Text("$streak Day Streak!"),
+              title: Text(
+                "$streak Day Streak!",
+                style: TextStyle(color: ColorConstants.textColor),
+              ),
             ),
             ListTile(
               leading: const Icon(Icons.calendar_today_outlined),
-              title: Text(joinDate),
+              title: Text(
+                joinDate,
+                style: TextStyle(color: ColorConstants.textColor),
+              ),
             ),
             const SizedBox(height: 30),
 
@@ -67,7 +83,10 @@ class ProfileScreen extends StatelessWidget {
                   MaterialPageRoute(builder: (_) => const EditProfileScreen()),
                 );
               },
-              child: const Text("Edit Profile"),
+              child: Text(
+                "Edit Profile",
+                style: TextStyle(color: ColorConstants.textColor),
+              ),
             ),
           ],
         ),

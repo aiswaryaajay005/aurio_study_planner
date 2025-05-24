@@ -20,11 +20,11 @@ class ReusableTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      style: TextStyle(color: ColorConstants.TextColor),
+      style: TextStyle(color: ColorConstants.textColor),
       validator: (value) => validator?.call(value),
       decoration: InputDecoration(
         labelText: labelText,
-        labelStyle: TextStyle(color: ColorConstants.TextColor),
+        labelStyle: TextStyle(color: ColorConstants.textColor),
         border: OutlineInputBorder(),
         enabledBorder: OutlineInputBorder(
           borderSide: BorderSide(color: ColorConstants.primaryColor),

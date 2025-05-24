@@ -20,7 +20,7 @@ class AdaptiveUpdateScreen extends StatelessWidget {
           children: [
             Text(
               "AI suggests changes based on your past sessions:",
-              style: TextStyle(color: ColorConstants.TextColor, fontSize: 16),
+              style: TextStyle(color: ColorConstants.textColor, fontSize: 16),
             ),
             const SizedBox(height: 20),
             ...suggestions.map(
@@ -28,7 +28,7 @@ class AdaptiveUpdateScreen extends StatelessWidget {
                 leading: Icon(Icons.tune, color: ColorConstants.accentColor),
                 title: Text(
                   item,
-                  style: TextStyle(color: ColorConstants.TextColor),
+                  style: TextStyle(color: ColorConstants.textColor),
                 ),
               ),
             ),

@@ -18,7 +18,7 @@ class ManageSubjectsScreen extends StatelessWidget {
           return ListTile(
             title: Text(
               subjects[index],
-              style: TextStyle(color: ColorConstants.TextColor),
+              style: TextStyle(color: ColorConstants.textColor),
             ),
             trailing: IconButton(
               icon: const Icon(Icons.delete, color: Colors.redAccent),

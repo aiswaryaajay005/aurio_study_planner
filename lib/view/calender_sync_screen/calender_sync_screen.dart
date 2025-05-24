@@ -15,7 +15,7 @@ class CalendarSyncScreen extends StatelessWidget {
           children: [
             Text(
               "Google Calendar Integration",
-              style: TextStyle(color: ColorConstants.TextColor, fontSize: 18),
+              style: TextStyle(color: ColorConstants.textColor, fontSize: 18),
             ),
             const SizedBox(height: 20),
             ElevatedButton(

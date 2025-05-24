@@ -11,7 +11,13 @@ class RewardsScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: ColorConstants.backgroundColor,
-      appBar: AppBar(title: const Text("Rewards")),
+      appBar: AppBar(
+        backgroundColor: ColorConstants.appBarColor,
+        title: Text(
+          "Rewards",
+          style: TextStyle(color: ColorConstants.appBarColor),
+        ),
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -24,7 +30,7 @@ class RewardsScreen extends StatelessWidget {
             const SizedBox(height: 20),
             Text(
               "💎 $coins Coins",
-              style: TextStyle(fontSize: 24, color: ColorConstants.TextColor),
+              style: TextStyle(fontSize: 24, color: ColorConstants.textColor),
             ),
             const SizedBox(height: 30),
             ElevatedButton(

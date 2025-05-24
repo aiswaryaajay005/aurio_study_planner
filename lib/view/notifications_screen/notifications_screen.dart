@@ -26,7 +26,7 @@ class NotificationsScreen extends StatelessWidget {
                 (context, index) => ListTile(
                   title: Text(
                     reminders[index],
-                    style: TextStyle(color: ColorConstants.TextColor),
+                    style: TextStyle(color: ColorConstants.textColor),
                   ),
                 ),
           ),

@@ -36,25 +36,25 @@ class _BottomNavbarState extends State<BottomNavbar> {
         icon: const Icon(Icons.home_outlined),
         title: "Home",
         activeColorPrimary: ColorConstants.accentColor,
-        inactiveColorPrimary: ColorConstants.TextColor,
+        inactiveColorPrimary: ColorConstants.textColor,
       ),
       PersistentBottomNavBarItem(
         icon: const Icon(Icons.calendar_today_outlined),
         title: "Tasks",
         activeColorPrimary: ColorConstants.accentColor,
-        inactiveColorPrimary: ColorConstants.TextColor,
+        inactiveColorPrimary: ColorConstants.textColor,
       ),
       PersistentBottomNavBarItem(
         icon: const Icon(Icons.bar_chart_outlined),
         title: "Stats",
         activeColorPrimary: ColorConstants.accentColor,
-        inactiveColorPrimary: ColorConstants.TextColor,
+        inactiveColorPrimary: ColorConstants.textColor,
       ),
       PersistentBottomNavBarItem(
         icon: const Icon(CupertinoIcons.settings),
         title: "Settings",
         activeColorPrimary: ColorConstants.accentColor,
-        inactiveColorPrimary: ColorConstants.TextColor,
+        inactiveColorPrimary: ColorConstants.textColor,
       ),
     ];
   }
@@ -75,7 +75,7 @@ class _BottomNavbarState extends State<BottomNavbar> {
         borderRadius: BorderRadius.circular(10.0),
         colorBehindNavBar: Colors.black,
         boxShadow: [
-          BoxShadow(color: ColorConstants.accentColor, blurRadius: 12),
+          BoxShadow(color: ColorConstants.primaryColor, blurRadius: 12),
         ],
       ),
       navBarHeight: 80.0,

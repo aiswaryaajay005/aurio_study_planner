@@ -23,7 +23,7 @@ class StreakFreezeScreen extends StatelessWidget {
             Text(
               "Missed your streak?\nUse freeze to save it!",
               textAlign: TextAlign.center,
-              style: TextStyle(color: ColorConstants.TextColor, fontSize: 18),
+              style: TextStyle(color: ColorConstants.textColor, fontSize: 18),
             ),
             const SizedBox(height: 30),
             Row(

@@ -40,7 +40,7 @@ class _SplashScreenState extends State<SplashScreen> {
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w400,
-                color: ColorConstants.TextColor,
+                color: ColorConstants.textColor,
               ),
             ),
             SizedBox(height: 30),
