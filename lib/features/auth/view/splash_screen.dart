@@ -54,6 +54,6 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
           ),
         )
-        : const AuthWrapper(); // ✅ Now handles login/profile check
+        : const AuthWrapper();
   }
 }
