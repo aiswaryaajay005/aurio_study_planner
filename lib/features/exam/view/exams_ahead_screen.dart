@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:aurio/core/services/supabase_helper.dart';
+import 'package:aurio/features/exam/view/all_exams_screen.dart';
 import 'package:aurio/features/exam/view/excam_prep_plan_list_Screen.dart';
 import 'package:aurio/shared/constants/color/color_constants.dart';
 import 'package:aurio/features/exam/view/add_exam_screen.dart';
@@ -116,6 +117,25 @@ class _ExamsAheadScreenState extends State<ExamsAheadScreen> {
                       ),
                       child: Text(
                         "Add New Exam",
+                        style: TextStyle(
+                          color: Theme.of(context).textTheme.bodyLarge?.color,
+                        ),
+                      ),
+                    ),
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => const AllExamsScreen(),
+                          ),
+                        );
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Theme.of(context).primaryColor,
+                      ),
+                      child: Text(
+                        "View All Exams",
                         style: TextStyle(
                           color: Theme.of(context).textTheme.bodyLarge?.color,
                         ),

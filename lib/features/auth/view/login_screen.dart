@@ -30,7 +30,11 @@ class _LoginScreenState extends State<LoginScreen> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               SizedBox(height: 100),
-
+              Image.asset(
+                'assets/images/auriologo.png',
+                height: 200,
+                width: 200,
+              ),
               ReusableHeader(textContent: "Welcome Back"),
               SizedBox(height: 20),
               Form(

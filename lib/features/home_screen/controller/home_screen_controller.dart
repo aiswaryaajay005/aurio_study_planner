@@ -1,7 +1,9 @@
 // --- HomeScreenController.dart (Updated) ---
 
 import 'dart:developer';
+import 'package:aurio/core/services/notification_scheduler.dart';
 import 'package:aurio/features/schedule/model/daily_schedule_generator.dart';
+import 'package:aurio/view/notifications_screen/view_model/notification_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:aurio/core/services/supabase_helper.dart';
 

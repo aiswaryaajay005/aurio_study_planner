@@ -1,3 +1,4 @@
+import 'package:aurio/core/services/local_notification_helper.dart';
 import 'package:aurio/core/services/theme_service.dart';
 import 'package:aurio/features/auth/view/splash_screen.dart';
 import 'package:aurio/features/leaderboards_screen/controller/leaderboard_controller.dart';
@@ -16,17 +17,15 @@ import 'package:aurio/core/theme/theme_data.dart';
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
 void main() async {
-  // Ensures binding before async code
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Initialize Supabase
   await Supabase.initialize(
     url: 'https://dzhyuvsfxdjwndeeycni.supabase.co',
     anonKey:
         'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR6aHl1dnNmeGRqd25kZWV5Y25pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQ5NDYzMzgsImV4cCI6MjA2MDUyMjMzOH0.Qu6W9Dcmaqw2dFGF0gNVkZMaIf1alHpszUjz1b90FXo',
   );
 
-  // Start the app
+  await LocalNotificationHelper.init();
   runApp(
     MultiProvider(
       providers: [

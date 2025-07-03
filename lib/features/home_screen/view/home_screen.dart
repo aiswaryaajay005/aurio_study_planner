@@ -1,3 +1,5 @@
+import 'package:aurio/core/services/notification_scheduler.dart';
+import 'package:aurio/core/services/supabase_helper.dart';
 import 'package:aurio/core/services/theme_service.dart';
 import 'package:aurio/shared/widgets/home_carousel.dart';
 import 'package:aurio/view/missed_tasks_screen/view/missed_tasks_screen.dart';
@@ -33,9 +35,15 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
       final ctrl = context.read<HomeScreenController>();
       ctrl.loadSchedule();
+      await NotificationScheduler.runDailyChecks(
+        SupabaseHelper.getCurrentUserId()!,
+      );
+      await NotificationScheduler.schedulePostLoginMotivation(
+        SupabaseHelper.getCurrentUserId()!,
+      );
     });
   }
 
@@ -309,7 +317,7 @@ class _HomeScreenState extends State<HomeScreen> {
   ) {
     return Column(
       children: [
-        GestureDetector(
+        InkWell(
           onTap:
               () => Navigator.push(
                 context,
