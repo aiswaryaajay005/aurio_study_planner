@@ -1,4 +1,4 @@
-import 'package:aurio/global_constants/color/color_constants.dart';
+import 'package:aurio/shared/constants/color/color_constants.dart';
 import 'package:flutter/material.dart';
 
 class SubmitFeedbackScreen extends StatefulWidget {
@@ -35,7 +35,7 @@ class _SubmitFeedbackScreenState extends State<SubmitFeedbackScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ColorConstants.backgroundColor,
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       appBar: AppBar(title: const Text("Submit Feedback")),
       body: Padding(
         padding: const EdgeInsets.all(20),
@@ -72,7 +72,7 @@ class _SubmitFeedbackScreenState extends State<SubmitFeedbackScreen> {
             const SizedBox(height: 30),
             ElevatedButton.icon(
               style: ElevatedButton.styleFrom(
-                backgroundColor: ColorConstants.primaryColor,
+                backgroundColor: Theme.of(context).primaryColor,
                 minimumSize: const Size(double.infinity, 50),
               ),
               onPressed: _submitFeedback,

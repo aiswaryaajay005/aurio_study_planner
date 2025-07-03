@@ -1,6 +1,6 @@
 // view/study_plan_screen.dart
 
-import 'package:aurio/global_constants/color/color_constants.dart';
+import 'package:aurio/shared/constants/color/color_constants.dart';
 import 'package:flutter/material.dart';
 
 class StudyPlanScreen extends StatelessWidget {
@@ -9,12 +9,12 @@ class StudyPlanScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ColorConstants.backgroundColor,
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       appBar: AppBar(
-        backgroundColor: ColorConstants.appBarColor,
+        backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
         title: Text(
           "Your Study Plan",
-          style: TextStyle(color: ColorConstants.textColor),
+          style: TextStyle(color: Theme.of(context).textTheme.bodyLarge?.color),
         ),
         centerTitle: true,
       ),
@@ -25,21 +25,27 @@ class StudyPlanScreen extends StatelessWidget {
             ListTile(
               title: Text(
                 "Math - 10 tasks",
-                style: TextStyle(color: ColorConstants.textColor),
+                style: TextStyle(
+                  color: Theme.of(context).textTheme.bodyLarge?.color,
+                ),
               ),
               trailing: Icon(Icons.check_circle, color: Colors.green),
             ),
             ListTile(
               title: Text(
                 "Science - 5 tasks",
-                style: TextStyle(color: ColorConstants.textColor),
+                style: TextStyle(
+                  color: Theme.of(context).textTheme.bodyLarge?.color,
+                ),
               ),
               trailing: Icon(Icons.radio_button_unchecked, color: Colors.grey),
             ),
             ListTile(
               title: Text(
                 "History - 8 tasks",
-                style: TextStyle(color: ColorConstants.textColor),
+                style: TextStyle(
+                  color: Theme.of(context).textTheme.bodyLarge?.color,
+                ),
               ),
               trailing: Icon(Icons.check_circle, color: Colors.green),
             ),
